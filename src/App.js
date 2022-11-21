@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// import overviewData from "./components/data";
+// import Overview from "./components/overview/Overview";
+
+import CreativeSpeakers from "./components/creativespeakers/CreativeSpeakers";
+import { speakerData } from "./components/creativespeakers/speakerData";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <div className="d-flex">
+        {overviewData.map((item) => {
+          return (
+            <Overview
+              id={item.id}
+              icon={item.icon}
+              desc={item.description}
+              title={item.title}
+            />
+          );
+        })}
+      </div> */}
+      <div className="d-flex">
+        {speakerData.map((item) => {
+          return (
+            <CreativeSpeakers
+              id={item.id}
+              img={item.img}
+              name={item.name}
+              job={item.job}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
