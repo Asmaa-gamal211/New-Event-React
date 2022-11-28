@@ -4,7 +4,7 @@ import img3 from "../../shared/speakers/speakers-img3.jpg";
 import img4 from "../../shared/speakers/speakers-img4.jpg";
 import img5 from "../../shared/speakers/speakers-img5.jpg";
 
-export const speakerData = [
+const speakerData = [
   {
     id: 1,
     img: img1,
@@ -36,3 +36,5 @@ export const speakerData = [
     job: "marketing",
   },
 ];
+
+export default speakerData;

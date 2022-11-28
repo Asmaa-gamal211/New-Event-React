@@ -3,9 +3,24 @@
   margin: 0;
   box-sizing: border-box;
   font-family: tahoma;
+  text-transform: capitalize;
 }
+
+
+
+/* global classes */
 .d-flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  gap: 2rem;
+}
+.circle-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+p {
+  color: #777;
+  letter-spacing: 1.1px;
 }

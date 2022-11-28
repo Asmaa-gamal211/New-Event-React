@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
+import { theme } from "../styles/config";
 
 const CreativeSpeakers = ({ img, name, job }) => {
   return (
@@ -14,6 +15,7 @@ const CreativeSpeakers = ({ img, name, job }) => {
 const SpeakersWrapper = styled.div`
   width: 285px;
   text-align: center;
+  color: ${theme.gray};
 `;
 
 export default CreativeSpeakers;

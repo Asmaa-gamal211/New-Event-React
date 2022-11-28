@@ -1,36 +1,20 @@
-// import overviewData from "./components/data";
-// import Overview from "./components/overview/Overview";
-
-import CreativeSpeakers from "./components/creativespeakers/CreativeSpeakers";
-import { speakerData } from "./components/creativespeakers/speakerData";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import CreativeSpeakers from "./designSystem/creativespeakers/CreativeSpeakers";
+import Overview from "./designSystem/overview/Overview";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      {/* <div className="d-flex">
-        {overviewData.map((item) => {
-          return (
-            <Overview
-              id={item.id}
-              icon={item.icon}
-              desc={item.description}
-              title={item.title}
-            />
-          );
-        })}
-      </div> */}
-      <div className="d-flex">
-        {speakerData.map((item) => {
-          return (
-            <CreativeSpeakers
-              id={item.id}
-              img={item.img}
-              name={item.name}
-              job={item.job}
-            />
-          );
-        })}
-      </div>
+      <NavBar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/overview" element={<Overview />} />
+          <Route path="/speakers" element={<CreativeSpeakers />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
