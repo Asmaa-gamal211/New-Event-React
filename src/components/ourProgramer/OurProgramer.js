@@ -4,7 +4,7 @@ import Tabs from "./Tabs";
 
 const OurProgramer = () => {
   return (
-    <Ourprogramer className="container">
+    <Ourprogramerr className="container">
       <Title>
         <span>our</span>
         <span style={{ color: "#f2545f", marginLeft: "1rem" }}>programes</span>
@@ -15,12 +15,12 @@ const OurProgramer = () => {
       <div>
         <Tabs />
       </div>
-    </Ourprogramer>
+    </Ourprogramerr>
   );
 };
 
-const Ourprogramer = styled.div`
-  padding: 4rem;
+const Ourprogramerr = styled.div`
+  padding: 4rem 0;
 `;
 
 const Title = styled.span`

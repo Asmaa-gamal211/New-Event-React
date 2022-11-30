@@ -8,7 +8,7 @@ import CreativeSpeakers from "../designSystem/creativespeakers/CreativeSpeakers"
 
 const Creative = () => {
   return (
-    <div className="container text-center">
+    <div className="container text-center" style={{ padding: "3rem 0" }}>
       <Title>
         <span>creative</span>
         <span style={{ color: "#f2545f", marginLeft: "1rem" }}>speakers</span>

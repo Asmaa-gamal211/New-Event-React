@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
-import intro from "../shared/imags/intro-bg.jpg";
 import { theme } from "../designSystem/styles/config";
+import intro from "../shared/imags/intro-bg.jpg";
 
 const Header = () => {
   return (

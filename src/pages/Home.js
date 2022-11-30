@@ -1,12 +1,16 @@
 import React from "react";
 import Aboutus from "../components/Aboutus";
+import Accordion from "../components/accordion/Accordionn";
+import ContactUs from "../components/ContactUs";
 import Creative from "../components/Creative";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import OurProgramer from "../components/ourProgramer/OurProgramer";
 import Overrview from "../components/Overrview";
+import Register from "../components/Register";
+import Sponser from "../components/Sponser";
+import Venus from "../components/Venus";
 import WatchVedio from "../components/WatchVedio";
-import Sponsers from "../designSystem/sponsers/Sponsers";
-import sponsersData from "../designSystem/sponsers/sponsersData";
 
 const Home = () => {
   return (
@@ -17,14 +21,12 @@ const Home = () => {
       <WatchVedio />
       <Creative />
       <OurProgramer />
-
-      <div>
-        <div className="d-flex">
-          {sponsersData.map((item) => {
-            return <Sponsers key={item.id} id={item.id} img={item.img} />;
-          })}
-        </div>
-      </div>
+      <Register />
+      <Accordion />
+      <Venus />
+      <Sponser />
+      <ContactUs />
+      <Footer />
     </div>
   );
 };

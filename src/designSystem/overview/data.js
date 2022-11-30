@@ -2,7 +2,7 @@ import { HiUserGroup } from "react-icons/hi";
 import { GiGroupedDrops } from "react-icons/gi";
 import { FaLayerGroup } from "react-icons/fa";
 
-const overviewData = [
+export const overviewData = [
   {
     id: 1,
     icon: <GiGroupedDrops />,
@@ -25,5 +25,3 @@ const overviewData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum necessitatibus nobis",
   },
 ];
-
-export default overviewData;

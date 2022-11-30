@@ -24,3 +24,18 @@ p {
   color: #777;
   letter-spacing: 1.1px;
 }
+
+.accordion-item {
+  margin-bottom: 2rem;
+  border: 1px solid #ddd !important;
+}
+
+
+.text-area {
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+}
